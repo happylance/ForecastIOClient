@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4007F0AD1E610C8C00463D8D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007F0AC1E610C8C00463D8D /* main.swift */; };
-		4007F0BC1E61285100463D8D /* ForecastIOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007F0BB1E61285100463D8D /* ForecastIOService.swift */; };
-		4007F0BE1E61C39500463D8D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007F0BD1E61C39500463D8D /* Config.swift */; };
 		4007F0C31E62445500463D8D /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4007F0BF1E62408200463D8D /* RxBlocking.framework */; };
 		4007F0C41E62445500463D8D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4007F0C01E62408200463D8D /* RxSwift.framework */; };
 		4007F0C61E624E4400463D8D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4007F0C51E624E4400463D8D /* RxCocoa.framework */; };
+		402AC6001E637FBC008957AB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AC5FD1E637FBC008957AB /* Config.swift */; };
+		402AC6011E637FBC008957AB /* ForecastIOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AC5FE1E637FBC008957AB /* ForecastIOService.swift */; };
+		402AC6021E637FBC008957AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AC5FF1E637FBC008957AB /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,12 +29,12 @@
 
 /* Begin PBXFileReference section */
 		4007F0A91E610C8C00463D8D /* ForecastIOClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ForecastIOClient; sourceTree = BUILT_PRODUCTS_DIR; };
-		4007F0AC1E610C8C00463D8D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		4007F0BB1E61285100463D8D /* ForecastIOService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastIOService.swift; sourceTree = "<group>"; };
-		4007F0BD1E61C39500463D8D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4007F0BF1E62408200463D8D /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
 		4007F0C01E62408200463D8D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
 		4007F0C51E624E4400463D8D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
+		402AC5FD1E637FBC008957AB /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Sources/Config.swift; sourceTree = SOURCE_ROOT; };
+		402AC5FE1E637FBC008957AB /* ForecastIOService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForecastIOService.swift; path = Sources/ForecastIOService.swift; sourceTree = SOURCE_ROOT; };
+		402AC5FF1E637FBC008957AB /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = Sources/main.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,8 @@
 				4007F0BF1E62408200463D8D /* RxBlocking.framework */,
 				4007F0C51E624E4400463D8D /* RxCocoa.framework */,
 				4007F0C01E62408200463D8D /* RxSwift.framework */,
-				4007F0AB1E610C8C00463D8D /* ForecastIOClient */,
+				4007F0AB1E610C8C00463D8D /* Sources */,
+				4007F0AA1E610C8C00463D8D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,17 +68,16 @@
 				4007F0A91E610C8C00463D8D /* ForecastIOClient */,
 			);
 			name = Products;
-			path = ..;
 			sourceTree = "<group>";
 		};
-		4007F0AB1E610C8C00463D8D /* ForecastIOClient */ = {
+		4007F0AB1E610C8C00463D8D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				4007F0BD1E61C39500463D8D /* Config.swift */,
-				4007F0BB1E61285100463D8D /* ForecastIOService.swift */,
-				4007F0AC1E610C8C00463D8D /* main.swift */,
-				4007F0AA1E610C8C00463D8D /* Products */,
+				402AC5FD1E637FBC008957AB /* Config.swift */,
+				402AC5FE1E637FBC008957AB /* ForecastIOService.swift */,
+				402AC5FF1E637FBC008957AB /* main.swift */,
 			);
+			name = Sources;
 			path = ForecastIOClient;
 			sourceTree = "<group>";
 		};
@@ -114,6 +114,7 @@
 					4007F0A81E610C8C00463D8D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PWZTK547J6;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -140,9 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4007F0AD1E610C8C00463D8D /* main.swift in Sources */,
-				4007F0BE1E61C39500463D8D /* Config.swift in Sources */,
-				4007F0BC1E61285100463D8D /* ForecastIOService.swift in Sources */,
+				402AC6011E637FBC008957AB /* ForecastIOService.swift in Sources */,
+				402AC6001E637FBC008957AB /* Config.swift in Sources */,
+				402AC6021E637FBC008957AB /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +241,7 @@
 		4007F0B11E610C8C00463D8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PWZTK547J6;
@@ -250,6 +252,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/Mac $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +260,7 @@
 		4007F0B21E610C8C00463D8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PWZTK547J6;
