@@ -17,18 +17,14 @@ do {
                 .getForecastJson$(apiKey, location:$0)
                 .catchError({
                     guard let serverError = $0 as? ForecastIOError else {
-                        print("Error: \($0)")
+                        print("Error: \($0)".replacingOccurrences(of: apiKey, with: "***"))
                         return .empty()
                     }
                     switch serverError {
                     case .invalidUrl(let location):
                         print("Could not create URL request for \(location)")
-                    case .noData:
-                        print("data is nil")
                     case .failedToParseJson:
                         print("Failed to parse JSON")
-                    case .serverError(let error):
-                        print("Error: \(error.localizedDescription)")
                     }
                     return .empty()
                 })

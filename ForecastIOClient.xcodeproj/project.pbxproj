@@ -12,6 +12,7 @@
 		4007F0BE1E61C39500463D8D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4007F0BD1E61C39500463D8D /* Config.swift */; };
 		4007F0C31E62445500463D8D /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4007F0BF1E62408200463D8D /* RxBlocking.framework */; };
 		4007F0C41E62445500463D8D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4007F0C01E62408200463D8D /* RxSwift.framework */; };
+		4007F0C61E624E4400463D8D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4007F0C51E624E4400463D8D /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		4007F0BD1E61C39500463D8D /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4007F0BF1E62408200463D8D /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/Mac/RxBlocking.framework; sourceTree = "<group>"; };
 		4007F0C01E62408200463D8D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		4007F0C51E624E4400463D8D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/Mac/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4007F0C61E624E4400463D8D /* RxCocoa.framework in Frameworks */,
 				4007F0C31E62445500463D8D /* RxBlocking.framework in Frameworks */,
 				4007F0C41E62445500463D8D /* RxSwift.framework in Frameworks */,
 			);
@@ -52,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				4007F0BF1E62408200463D8D /* RxBlocking.framework */,
+				4007F0C51E624E4400463D8D /* RxCocoa.framework */,
 				4007F0C01E62408200463D8D /* RxSwift.framework */,
 				4007F0AB1E610C8C00463D8D /* ForecastIOClient */,
 			);
